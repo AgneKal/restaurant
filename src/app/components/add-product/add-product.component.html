@@ -1,0 +1,10 @@
+<div class="card mt-5">
+    <div class="card-header">Pridėti naują produktą</div>
+    <div class="card-body">
+        <label for="" class="form-label">Produkto pavadinimas</label>
+        <input type="text" class="form-control mb-3" [(ngModel)]="name">
+        <label for="" class="form-label">Kiekis</label>
+        <input type="number" class="form-control mb-3" [(ngModel)]="quantity">
+        <button class="btn btn-primary" (click)="addItem()" [disabled]="name == null && isNaN(quantity)">Pridėti</button>
+    </div>
+</div>

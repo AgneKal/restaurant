@@ -1,0 +1,17 @@
+<div class="card mt-5">
+    <div class="card-header">Užsakymo sąrašas</div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row mb-3" *ngFor="let item of orders; let i=index">
+                    <div class="col-md-6">{{ i+1 }} {{ item.name }}</div>
+                    <div class="col-md-2">{{ item.quantity }}</div>
+                    <div class="col-md-4">
+                        <button class="btn btn-danger btn-sm" (click)="deleteItem(i)">Ištrinti</button>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
