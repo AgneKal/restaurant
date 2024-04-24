@@ -12,7 +12,7 @@ import { OrderService } from '../../services/order.service';
 })
 export class AddProductComponent {
   public name: string|null = null;
-  public quantity:number|null = 1;
+  public quantity:number|null = null;
   
   public orders: Item[];
 
@@ -28,13 +28,6 @@ export class AddProductComponent {
       })
     }
     this.name = null;
-    this.quantity = 1;
-  }
-
-  public isNaN(i:number|null){
-    if (i!=null) {
-      return isNaN(i);
-    } 
-    return false;
+    this.quantity = null;
   }
 }

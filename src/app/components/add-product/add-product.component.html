@@ -5,6 +5,6 @@
         <input type="text" class="form-control mb-3" [(ngModel)]="name">
         <label for="" class="form-label">Kiekis</label>
         <input type="number" class="form-control mb-3" [(ngModel)]="quantity">
-        <button class="btn btn-primary" (click)="addItem()" [disabled]="name == null && isNaN(quantity)">Pridėti</button>
+        <button class="btn btn-primary" (click)="addItem()" [disabled]="name==null || quantity==null">Pridėti</button>
     </div>
 </div>
