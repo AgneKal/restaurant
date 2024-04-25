@@ -16,8 +16,8 @@ export class ListProductComponent {
     this.orders = orderService.orders;
   }
 
-  public deleteNote(i:number){
-    this.orderService.deleteNote(i);
+  public deleteItem(i:number){
+    this.orderService.deleteItem(i);
   }
 
 }
