@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Item } from '../models/item';
-import { JsonPipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
