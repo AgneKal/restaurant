@@ -20,9 +20,9 @@ export class AddProductComponent {
     this.orders = orderService.orders;
   }
 
-  public addItem() {
+  public addNote() {
     if (this.name != null && this.quantity != null){
-      this.orderService.addItem({
+      this.orderService.addNote({
         name: this.name,
         quantity: this.quantity
       })

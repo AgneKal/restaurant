@@ -17,12 +17,12 @@ export class OrderService {
     localStorage.setItem('orders', JSON.stringify(this.orders));
   }
 
-  public addItem(item: Item){
+  public addNote(item: Item){
     this.orders.push(item);
     this.save();
   }
 
-  public deleteItem(i: number){
+  public deleteNote(i: number){
     this.orders.splice(i, 1);
     this.save();
   }
